@@ -270,103 +270,69 @@ background:radial-gradient(600px 320px at 50% 0%,rgba(10,108,255,.08),transparen
 
 footer{border-top:1px solid var(--line);padding:36px 0;font-size:.86rem;color:var(--gray)}
 .foot-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+
+.ex-translation {
+  margin: 8px 0 0;
+  color: var(--gray);
+  font-size: 0.92em;
+  font-weight: 400;
+}
 </style>
 </head>
 <body>
 
 <nav aria-label="Main">
   <div class="nav-inner">
-    <a class="brand" href="#top"><span class="dot"></span>Don't Get Lost</a>
+    <a class="brand" href="#top"><span class="dot"></span>Донт гет лост</a>
     <div class="nav-links">
-      <a href="#method">Method</a>
-      <a href="#inside">What's inside</a>
-      <a href="#preview">Preview</a>
-      <a href="#faq">FAQ</a>
+      <a href="#method">Как это работает</a>
+<a href="#inside">Что внутри</a>
+<a href="#preview">Посмотреть внутри</a>
+<a href="#faq">Вопросы</a>
     </div>
-    <a class="btn btn-primary nav-buy buy-link" href="#">Buy PDF — $12</a>
+    <a class="btn btn-primary nav-buy buy-link" href="#buy">Buy PDF</a>
   </div>
 </nav>
 
 <!-- ============ HERO ============ -->
 <header class="hero" id="top">
   <div class="wrap hero-grid">
-
     <div class="hero-copy">
-      <span class="eyebrow">
-        DON’T GET LOST · BOOK 1
-        <small>PRACTICAL ENGLISH FOR REAL CONVERSATIONS</small>
-      </span>
+      <span class="eyebrow">PDF Guide · Book 1 in the series</span>
 
-      <h1>
-        Не понял английский?
-        <span>Не говори “Yes” наугад.</span>
-      </h1>
+      <h1>Не понял вопрос?<br>Не угадывай ответ.</h1>
 
       <p class="lead hero-sub">
-        Практический PDF для русскоязычных в США:
-        что сказать, когда тебя спросили, ты не понял,
-        говорят слишком быстро или нужно уточнить важное.
+        Не список фраз с переводом.
+        Плейбук, который ведёт тебя по разговору:
+        что услышишь → что сказать → что ответить дальше.
       </p>
 
-      <p class="hero-intro">
-        Не учи весь английский заранее.
-        <strong>Открой нужную страницу и получи следующую фразу.</strong>
+      <p class="ru">
+        70 коротких диалогов повторяют одни и те же спасательные фразы
+        в разных ситуациях, чтобы ты узнавал их и мог сказать вовремя,
+        а не вспоминал уже после разговора.
       </p>
 
       <div class="hero-ctas">
-        <a class="btn btn-primary buy-link" href="#">
-          Открыть PDF на Payhip
-        </a>
-
-        <a class="btn btn-ghost" href="#preview">
-          Посмотреть, что внутри
-        </a>
+        <a class="btn btn-primary buy-link" href="#">Купить PDF</a>
+        <a class="btn btn-ghost" href="#preview">Посмотреть, как это работает</a>
       </div>
-
-      <p class="hero-note">
-        Мгновенная загрузка · Удобно читать с телефона и компьютера
-      </p>
 
       <div class="hero-stats">
-
-        <article class="hero-stat">
-          <strong>7</strong>
-          <div>
-            <h3>ситуаций</h3>
-            <p>Не понял вопрос, говорят быстро, нужна пауза, цифра, адрес, имя или помощь.</p>
-          </div>
-        </article>
-
-        <article class="hero-stat">
-          <strong>70</strong>
-          <div>
-            <h3>коротких диалогов</h3>
-            <p>Одна и та же полезная фраза повторяется в разных жизненных ситуациях.</p>
-          </div>
-        </article>
-
-        <article class="hero-stat">
-          <strong>6</strong>
-          <div>
-            <h3>способов не растеряться</h3>
-            <p>Простые шаги, когда мозг зависает прямо во время разговора.</p>
-          </div>
-        </article>
-
+        <span class="stat"><b>70</b> живых диалогов</span>
+        <span class="stat"><b>7</b> способов не потеряться</span>
+        <span class="stat"><b>0</b> причин говорить “Yes” наугад</span>
       </div>
+
+      <p class="hero-note">Мгновенная загрузка · Для телефона и компьютера</p>
     </div>
 
     <div class="device-stage" aria-hidden="true">
-
-      <div class="hero-shape shape-blue"></div>
-      <div class="hero-shape shape-gray"></div>
-
       <div class="ipad-ghost">
-        <span class="ph-line w60"></span>
-        <span class="ph-line w80"></span>
-        <div class="ph-block">PDF</div>
-        <span class="ph-line w80"></span>
-        <span class="ph-line w60"></span>
+        <span class="ph-line w60"></span><span class="ph-line w80"></span>
+        <div class="ph-block">📖</div>
+        <span class="ph-line w80"></span><span class="ph-line w60"></span>
       </div>
 
       <div class="iphone">
@@ -374,71 +340,117 @@ footer{border-top:1px solid var(--line);padding:36px 0;font-size:.86rem;color:va
           <div class="notch"></div>
 
           <div class="chat-head">
-            <span class="chat-kicker">DON’T GET LOST · BOOK 1</span>
-            <b>Что сказать дальше?</b>
-            <small>короткий диалог из playbook</small>
+            <b>Диалог 1 из 70</b>
+            не понял вопрос · что сказать дальше
           </div>
 
           <div class="chat">
-
             <div class="bubble b-them">
               <span class="tag">ТЕБЕ СКАЗАЛИ</span>
-              <strong>For here or to go?</strong>
+              For here or to go?
             </div>
 
             <div class="bubble b-you">
-              <span class="tag">СКАЖИ</span>
-              <strong>Could you repeat that, please?</strong>
+              <span class="tag">ТВОЯ ФРАЗА</span>
+              Could you repeat that, please?
             </div>
 
             <div class="bubble b-them">
               <span class="tag">ТЕБЕ ПОВТОРИЛИ</span>
-              <strong>For here or to go?</strong>
+              For here or to go?
             </div>
 
-            <div class="bubble b-you b-answer">
-              <span class="tag">ТВОЙ ОТВЕТ</span>
-              <strong>To go, please.</strong>
+            <div class="bubble b-you">
+              <span class="tag">ТВОЙ СЛЕДУЮЩИЙ ШАГ</span>
+              To go, please.
             </div>
 
-            <div class="bubble b-next">
-              <span class="tag">ЕСЛИ ВСЁ РАВНО НЕ ПОНЯЛ</span>
-              <strong>What do you need from me?</strong>
+            <div class="bubble b-sos">
+              <span class="tag">ЧТО ТЫ ТОЛЬКО ЧТО СДЕЛАЛ</span>
+              Не угадал. Переспросил. Понял. Ответил.
             </div>
-
           </div>
         </div>
       </div>
 
       <div class="macbook-ghost">
-        <div class="bar">
-          <i></i><i></i><i></i>
-        </div>
+        <div class="bar"><i></i><i></i><i></i></div>
         <span class="pdf-tag">PDF</span>
         <span class="ph-line" style="width:85%"></span>
         <span class="ph-line" style="width:65%"></span>
         <span class="ph-line" style="width:75%"></span>
       </div>
-
     </div>
   </div>
 </header>
-     
-     
-     <!-- ============ PROBLEM ============ -->
+
+<!-- ============ PROBLEM ============ -->
 <section class="alt">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">The real problem</span>
-      <h2>You don't need perfect English.<br>You need a way to not freeze.</h2>
-      <p class="ru">Тебе не нужен идеальный английский. Тебе нужен способ не растеряться.</p>
+      <span class="eyebrow">WHY A PHRASE LIST IS NOT ENOUGH</span>
+
+      <h2>
+        Одной фразы мало,<br>
+        когда разговор уже идёт.
+      </h2>
+
+      <p class="ru">
+        Google может дать перевод. Но он не подскажет,
+        что тебе скажут после этого и что отвечать дальше.
+      </p>
     </div>
+
     <div class="problem-list">
-      <div class="problem-item"><div class="ico">😶</div><p>Someone asks you something — and you don't understand.</p></div>
-      <div class="problem-item"><div class="ico">🙋</div><p>You need help — but don't know how to explain.</p></div>
-      <div class="problem-item"><div class="ico">❓</div><p>You hear <em>"You're all set"</em> or <em>"You're good"</em> — and have no idea what it means.</p></div>
-      <div class="problem-item"><div class="ico">🤝</div><p>You want to sound polite, not rude or lost.</p></div>
-      <div class="problem-item"><div class="ico">⚡</div><p>You need phrases you can use <em>today</em>.</p></div>
+
+      <div class="problem-item">
+        <div class="ico">💬</div>
+        <p>
+          Ты нашёл фразу, но не знаешь,
+          <em>что услышишь в ответ.</em>
+        </p>
+      </div>
+
+      <div class="problem-item">
+        <div class="ico">➡️</div>
+        <p>
+          Ты переспросил, но не понял,
+          <em>что сказать следующим.</em>
+        </p>
+      </div>
+
+      <div class="problem-item">
+        <div class="ico">⏱️</div>
+        <p>
+          Разговор идёт дальше, а тебе нужно
+          <em>несколько секунд, чтобы собраться.</em>
+        </p>
+      </div>
+
+      <div class="problem-item">
+        <div class="ico">👂</div>
+        <p>
+          Ты понял отдельные слова,
+          но не собрал <em>смысл целиком.</em>
+        </p>
+      </div>
+
+      <div class="problem-item">
+        <div class="ico">🔁</div>
+        <p>
+          Ты вроде знаешь фразу,
+          но в реальном разговоре <em>она не вспоминается вовремя.</em>
+        </p>
+      </div>
+
+      <div class="problem-item">
+        <div class="ico">⚠️</div>
+        <p>
+          Когда речь о деньгах, дате или подписи,
+          <em>угадывать нельзя.</em>
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -447,17 +459,18 @@ footer{border-top:1px solid var(--line);padding:36px 0;font-size:.86rem;color:va
 <section>
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">What this guide helps you do</span>
-      <h2>Small phrases. Big difference.</h2>
+      <span class="eyebrow">WHAT THIS GUIDE HELPS YOU DO</span>
+      <h2>Не просто фразы.<br>Следующий шаг в разговоре.</h2>
     </div>
+
     <div class="chips">
-      <div class="chip">🔁 Ask people to repeat</div>
-      <div class="chip">🐢 Ask people to speak slowly</div>
+      <div class="chip">🔁 Переспросить, не кивая наугад</div>
       <div class="chip">🎯 Понять, что от тебя хотят</div>
-      <div class="chip">✍️ Перевести разговор в текст и экран</div>
-      <div class="chip">⏸️ Buy time when you panic</div>
-      <div class="chip">🔢 Проверить цифры, даты и имена</div>
-      <div class="chip">📱 Show ready-made phrases on your phone</div>
+      <div class="chip">💨 Попросить говорить медленнее</div>
+      <div class="chip">👀 Попросить показать или написать</div>
+      <div class="chip">⏸️ Взять секунду, чтобы проверить</div>
+      <div class="chip">🔢 Уточнить цифру, дату, адрес или имя</div>
+      <div class="chip">🆘 Попросить объяснить проще или помочь</div>
     </div>
   </div>
 </section>
@@ -466,71 +479,168 @@ footer{border-top:1px solid var(--line);padding:36px 0;font-size:.86rem;color:va
 <section class="alt" id="method">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Not a phrasebook — a rescue system</span>
-      <h2>Say It → Hear It → Handle It</h2>
-      <p class="lead">Most phrasebooks stop at "what to say". This guide prepares you for what happens <b>next</b>.</p>
+      <span class="eyebrow">NOT A PHRASEBOOK · A CONVERSATION MAP</span>
+
+      <h2>Скажи → Услышь ответ → Знай, что делать дальше</h2>
+
+      <p class="lead">
+        Обычный разговорник даёт одну фразу.
+        Этот PDF показывает, <b>что происходит после неё.</b>
+      </p>
     </div>
+
     <div class="method-cards">
       <div class="method-card">
-        <div class="step-ico">🗣️</div>
-        <h3>Say It</h3>
-        <p>Главная фраза каждой главы + короткая аварийная версия, с произношением русскими буквами.</p>
+        <div class="step-ico" style="color:#fff;font-size:30px;font-weight:800;">“”</div>
+        <h3>Скажи</h3>
+        <p>
+          Главная фраза для ситуации, короткий вариант
+          и русская подсказка произношения.
+        </p>
       </div>
+
       <div class="method-card">
         <div class="step-ico">👂</div>
-        <h3>Hear It</h3>
-        <p>Что американцы реально ответят — блоки «Что тебе могут ответить» после каждых диалогов.</p>
+        <h3>Услышь</h3>
+        <p>
+          Короткие ответы, которые тебе могут сказать дальше,
+          и простые диалоги, чтобы не потеряться после первой фразы.
+        </p>
       </div>
+
       <div class="method-card">
         <div class="step-ico">🧭</div>
-        <h3>Handle It</h3>
-        <p>Что сказать дальше + 6 психологических приёмов, чтобы не зависнуть и не сказать «Yes» наугад.</p>
+        <h3>Действуй дальше</h3>
+        <p>
+          Следующая фраза, если повтор не помог:
+          уточни, попроси показать, возьми паузу или проверь важное.
+        </p>
       </div>
     </div>
+
     <div class="example-glass">
-      <p class="ex-label">Example from the guide · Глава 1</p>
-      <div class="ex-row ex-say"><span class="ex-tag">Say it</span>
-        <p class="ex-phrase">"Could you repeat that, please?" <span style="color:var(--gray);font-weight:400">[куд ю рипи́т зэт, плиз]</span></p></div>
-      <div class="ex-row ex-hear"><span class="ex-tag">You may hear</span>
-        <p class="ex-phrase">"Sure." · "No problem." · "Of course."</p></div>
-      <div class="ex-row ex-handle"><span class="ex-tag">Handle it</span>
-        <p class="ex-phrase">"What do you need from me?"</p></div>
-      <div class="ex-row ex-sos"><span class="ex-tag">Emergency</span>
-        <p class="ex-phrase">"I'm still learning English. Could you help me understand?"</p></div>
+      <p class="ex-label">ПРИМЕР ИЗ КНИГИ · ГЛАВА 1</p>
+
+      <div class="ex-row ex-say">
+        <span class="ex-tag">ТЕБЕ СКАЗАЛИ</span>
+        <p class="ex-phrase">“For here or to go?”</p>
+        <p class="ex-translation">
+          [фор хи́р ор ту гоу] · Здесь или с собой?
+        </p>
+      </div>
+
+      <div class="ex-row ex-hear">
+        <span class="ex-tag">ТЫ ПЕРЕСПРАШИВАЕШЬ</span>
+        <p class="ex-phrase">“Could you repeat that, please?”</p>
+        <p class="ex-translation">
+          [куд ю рипи́т зэт, плиз] · Не могли бы вы повторить?
+        </p>
+      </div>
+
+      <div class="ex-row ex-handle">
+        <span class="ex-tag">ЧЕЛОВЕК ПОВТОРЯЕТ</span>
+        <p class="ex-phrase">“For here or to go?”</p>
+        <p class="ex-translation">
+          [фор хи́р ор ту гоу] · Здесь или с собой?
+        </p>
+      </div>
+
+      <div class="ex-row ex-sos">
+        <span class="ex-tag">ТВОЙ ОТВЕТ</span>
+        <p class="ex-phrase">“To go, please.”</p>
+        <p class="ex-translation">
+          [ту гоу, плиз] · С собой, пожалуйста.
+        </p>
+      </div>
     </div>
   </div>
 </section>
+
 
 <!-- ============ WHAT'S INSIDE ============ -->
 <section id="inside">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">What's inside</span>
-      <h2>Seven chapters. One for each moment you freeze.</h2>
-      <p class="ru">Ищи не по темам, а по состоянию: каждая глава — это момент, в котором ты застрял. Внутри — фразы, приём и 10 живых диалогов.</p>
+      <span class="eyebrow">ЧТО ВНУТРИ</span>
+
+      <h2>
+        7 глав для тех моментов,<br>
+        когда ты потерялся в разговоре.
+      </h2>
+
+      <p class="ru">
+        Не отдельные главы «про магазин» или «про врача».
+        Здесь один навык работает в разных жизненных ситуациях:
+        переспросить, понять задачу, замедлить разговор, попросить показать,
+        взять паузу или проверить важное.
+      </p>
     </div>
+
     <div class="toc">
-      <div class="toc-item"><span class="toc-num">01</span>Я не понял. Что сказать вместо «Yes»?</div>
-      <div class="toc-item"><span class="toc-num">02</span>Я услышал слова, но не понял, что от меня хотят</div>
-      <div class="toc-item"><span class="toc-num">03</span>Они говорят слишком быстро</div>
-      <div class="toc-item"><span class="toc-num">04</span>Покажи, напиши, набери</div>
-      <div class="toc-item"><span class="toc-num">05</span>Дай мне секунду. Я проверю</div>
-      <div class="toc-item"><span class="toc-num">06</span>Проверь цифру, дату, имя или адрес</div>
-      <div class="toc-item"><span class="toc-num">07</span>Я всё ещё не понимаю. Что делать дальше?</div>
-      <div class="toc-item"><span class="toc-num">★</span>Алфавит «A as in Apple» + цифры, цены и даты США</div>
-      <div class="toc-item"><span class="toc-num">★</span>Show This on Your Phone + 20 фраз-спасателей</div>
+      <div class="toc-item">
+        <span class="toc-num">01</span>
+        Я не понял. Что сказать вместо «Yes»?
+      </div>
+
+      <div class="toc-item">
+        <span class="toc-num">02</span>
+        Я услышал слова, но не понял, что от меня хотят
+      </div>
+
+      <div class="toc-item">
+        <span class="toc-num">03</span>
+        Они говорят слишком быстро
+      </div>
+
+      <div class="toc-item">
+        <span class="toc-num">04</span>
+        Покажи, напиши, набери
+      </div>
+
+      <div class="toc-item">
+        <span class="toc-num">05</span>
+        Дай мне секунду. Я проверю
+      </div>
+
+      <div class="toc-item">
+        <span class="toc-num">06</span>
+        Проверь цифру, дату, имя или адрес
+      </div>
+
+      <div class="toc-item">
+        <span class="toc-num">07</span>
+        Я всё ещё не понимаю. Что делать дальше?
+      </div>
+
+      <div class="toc-item">
+        <span class="toc-num">★</span>
+        Алфавит по-английски + цифры, цены, даты и время в США
+      </div>
+
+      <div class="toc-item">
+        <span class="toc-num">★</span>
+        Готовые карточки для телефона + 20 фраз-спасателей
+      </div>
     </div>
-    <div class="toc-final">В финале — <b>«Мой план, если я завис»</b> и аварийная страница <b>«Я завис. Что говорить?»</b>: 7 фраз крупным шрифтом, чтобы открыть на телефоне за две секунды.</div>
+
+    <div class="toc-final">
+      <b>Завис прямо во время разговора?</b><br>
+      В конце книги есть «Мой план, если я завис» и отдельная аварийная страница
+      <b>«Я завис. Что говорить?»</b> —
+      7 фраз крупным шрифтом, которые можно открыть на телефоне за две секунды.
+    </div>
   </div>
 </section>
+
 
 <!-- ============ PREVIEW ============ -->
 <section class="alt" id="preview">
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">Preview inside</span>
-      <h2>Take a look before you buy</h2>
-      <p class="ru">Замени эти карточки реальными скриншотами страниц PDF.</p>
+      <h2>Посмотри, как книга помогает в разговоре</h2>
+      <p class="ru">Английская фраза, как её произнести, перевод,в
+        короткий диалог и следующий шаг, если ты всё ещё не понял.</p>
     </div>
     <div class="preview-scroll">
       <div class="pv-card pv-1"><div class="pv-art">📄</div><div class="pv-label">Страница главы<small>фраза · варианты · приём</small></div></div>
@@ -546,27 +656,75 @@ footer{border-top:1px solid var(--line);padding:36px 0;font-size:.86rem;color:va
 <section>
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Honest fit check</span>
-      <h2>Is this guide for you?</h2>
+      <span class="eyebrow">ПОДОЙДЁТ ЛИ ТЕБЕ ЭТА КНИГА?</span>
+      <h2>Это для тебя?</h2>
     </div>
+
     <div class="who-grid">
       <div class="who-card who-yes">
-        <h3>✅ This is for you if…</h3>
+        <h3>✅ Тебе подойдёт, если…</h3>
+
         <ul>
-          <li><b>✓</b>You live in the USA and still feel nervous speaking English.</li>
-          <li><b>✓</b>You understand some English but freeze in real conversations.</li>
-          <li><b>✓</b>You want practical phrases, not grammar theory.</li>
-          <li><b>✓</b>You want something you can open on your phone.</li>
-          <li><b>✓</b>You speak Russian or Ukrainian and need English for daily life.</li>
+          <li>
+            <b>✓</b>
+            Ты живёшь в США и иногда не понимаешь, что тебе сказали.
+          </li>
+
+          <li>
+            <b>✓</b>
+            Ты знаешь отдельные слова, но теряешься в живом разговоре.
+          </li>
+
+          <li>
+            <b>✓</b>
+            Ты хочешь не просто перевод, а понять, что сказать дальше.
+          </li>
+
+          <li>
+            <b>✓</b>
+            Тебе нужны короткие фразы для магазина, звонка, школы, врача, работы или обычной жизни.
+          </li>
+
+          <li>
+            <b>✓</b>
+            Тебе удобно открыть PDF на телефоне перед разговором или прямо во время него.
+          </li>
+
+          <li>
+            <b>✓</b>
+            Ты говоришь по-русски и учишь английский для жизни в США.
+          </li>
         </ul>
       </div>
+
       <div class="who-card who-no">
-        <h3>🚫 This is not for you if…</h3>
+        <h3>🚫 Тебе не подойдёт, если…</h3>
+
         <ul>
-          <li><b>✕</b>You already speak fluent English.</li>
-          <li><b>✕</b>You want advanced academic English.</li>
-          <li><b>✕</b>You want a full grammar course.</li>
-          <li><b>✕</b>You are looking for a traditional textbook.</li>
+          <li>
+            <b>✕</b>
+            Ты уже свободно говоришь по-английски в обычных ситуациях.
+          </li>
+
+          <li>
+            <b>✕</b>
+            Тебе нужен полноценный курс грамматики.
+          </li>
+
+          <li>
+            <b>✕</b>
+            Ты ищешь учебник для продвинутого или академического английского.
+          </li>
+
+          <li>
+            <b>✕</b>
+            Тебе нужен отдельный разговорник только для одной темы, например только для врача или только для работы.
+          </li>
+
+          <li>
+            <b>✕</b>
+            Ты хочешь выучить английский с нуля по одному PDF.
+          </li>
         </ul>
       </div>
     </div>
@@ -578,23 +736,44 @@ footer{border-top:1px solid var(--line);padding:36px 0;font-size:.86rem;color:va
   <div class="wrap">
     <div class="product-card">
       <div class="product-left">
-        <span class="eyebrow">Digital PDF Guide</span>
-        <h3 style="font-size:1.6rem">Don't Get Lost, Start Here</h3>
-        <p class="price">$12 <small>one-time · instant download</small></p>
+        <span class="eyebrow">PDF · КНИГА 1</span>
+
+        <h3 style="font-size:1.6rem">Don't Get Lost: Start Here</h3>
+
+        <p class="price">
+          $19
+          <small>одна покупка · PDF сразу после оплаты</small>
+        </p>
+
         <ul class="includes">
-          <li>Instant PDF download through Payhip</li>
-          <li>7 глав по ситуациям + 70 живых диалогов с переводом</li>
-          <li>6 психологических приёмов против ступора</li>
-          <li>Алфавит «A as in Apple», цифры, цены и даты США</li>
-          <li>Произношение русскими буквами у главных фраз</li>
-          <li>Works on phone, tablet, computer · Printable</li>
+          <li>7 глав для моментов, когда ты потерялся в разговоре</li>
+
+          <li>70 коротких диалогов: что сказали → что ответить → что делать дальше</li>
+
+          <li>Главные фразы с русским произношением и переводом</li>
+
+          <li>Короткие приёмы, чтобы не зависнуть и не сказать «Yes» наугад</li>
+
+          <li>Алфавит «A as in Apple», цифры, цены, даты и время в США</li>
+
+          <li>Карточки для телефона, 20 фраз-спасателей и аварийная страница</li>
+
+          <li>Работает на телефоне, планшете и компьютере · можно распечатать</li>
         </ul>
-        <a class="btn btn-primary buy-link" href="#">Buy PDF on Payhip</a>
-        <p class="guarantee">Payment and delivery are handled securely by Payhip.</p>
+
+        <a class="btn btn-primary buy-link" href="#">
+          Купить PDF за $19
+        </a>
+
+        <p class="guarantee">
+          Оплата и получение файла происходят через Payhip.
+        </p>
       </div>
+
       <div class="product-right">
         <div class="mini-cover">
           <span class="pdf-chip">PDF · BOOK 1</span>
+
           <div>
             <h4>Don't Get Lost, Start Here</h4>
             <p>Я не понял. Что сказать вместо «Yes»?</p>
@@ -605,37 +784,87 @@ footer{border-top:1px solid var(--line);padding:36px 0;font-size:.86rem;color:va
   </div>
 </section>
 
-<!-- ============ HOW IT WORKS ============ -->
-<section>
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">How it works</span>
-      <h2>From click to reading in one minute</h2>
-    </div>
-    <div class="steps">
-      <div class="step"><div class="n">1</div><h3>Click Buy PDF</h3><p>The button takes you to Payhip.</p></div>
-      <div class="step"><div class="n">2</div><h3>Pay securely</h3><p>Payhip handles the checkout safely.</p></div>
-      <div class="step"><div class="n">3</div><h3>Get instant access</h3><p>The PDF is available right after purchase.</p></div>
-      <div class="step"><div class="n">4</div><h3>Open or print</h3><p>Read it on your phone or print it.</p></div>
-    </div>
-  </div>
-</section>
 
 <!-- ============ COMING NEXT ============ -->
+<!-- ============ DON’T GET LOST SERIES ============ -->
 <section class="alt" id="soon">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Coming next</span>
-      <h2>More practical PDF guides are coming soon</h2>
-      <p class="ru">Это первая книга серии. Следующие гайды — для конкретных жизненных ситуаций.</p>
+      <span class="eyebrow">DON’T GET LOST SERIES</span>
+
+      <h2>
+        Начни с любого разговора.<br>
+        Потом разбирай конкретные ситуации.
+      </h2>
+
+      <p class="ru">
+        Book 1 даёт тебе универсальные фразы, чтобы не потеряться.
+        Следующие книги будут помогать уже в конкретных местах жизни в США.
+      </p>
     </div>
+
     <div class="soon-grid">
-      <div class="soon-card"><div class="cover">🚗</div><h3>English for Uber &amp; Lyft</h3><p>Rides, addresses, small talk with drivers.</p><span class="soon-badge">Coming soon</span></div>
-      <div class="soon-card"><div class="cover">🛒</div><h3>English at the Grocery Store</h3><p>Checkout, questions, finding what you need.</p><span class="soon-badge">Coming soon</span></div>
-      <div class="soon-card"><div class="cover">💊</div><h3>English at the Pharmacy &amp; Doctor</h3><p>Symptoms, prescriptions, appointments.</p><span class="soon-badge">Coming soon</span></div>
-      <div class="soon-card"><div class="cover">💼</div><h3>English for Work</h3><p>Shifts, coworkers, everyday work phrases.</p><span class="soon-badge">Coming soon</span></div>
-      <div class="soon-card"><div class="cover">🚨</div><h3>Emergency English</h3><p>911, urgent help, critical phrases.</p><span class="soon-badge">Coming soon</span></div>
-      <div class="soon-card"><div class="cover">🎒</div><h3>English for School &amp; Kids</h3><p>Teachers, school forms, parent talk.</p><span class="soon-badge">Coming soon</span></div>
+
+      <div class="soon-card">
+        <div class="cover">🛒</div>
+        <h3>Don’t Get Lost at the Store</h3>
+        <p>
+          Касса, возвраты, цены, self-checkout,
+          поиск нужного товара.
+        </p>
+        <span class="soon-badge">В разработке</span>
+      </div>
+
+      <div class="soon-card">
+        <div class="cover">📞</div>
+        <h3>Don’t Get Lost on the Phone</h3>
+        <p>
+          Звонки, voicemail, запись,
+          подтверждения и ожидание на линии.
+        </p>
+        <span class="soon-badge">В разработке</span>
+      </div>
+
+      <div class="soon-card">
+        <div class="cover">💼</div>
+        <h3>Don’t Get Lost at Work</h3>
+        <p>
+          Смены, инструкции, коллеги,
+          вопросы и повседневные рабочие ситуации.
+        </p>
+        <span class="soon-badge">В разработке</span>
+      </div>
+
+      <div class="soon-card">
+        <div class="cover">🩺</div>
+        <h3>Don’t Get Lost at the Doctor</h3>
+        <p>
+          Записи, симптомы, лекарства,
+          страховые карты и формы.
+        </p>
+        <span class="soon-badge">В разработке</span>
+      </div>
+
+      <div class="soon-card">
+        <div class="cover">🎒</div>
+        <h3>Don’t Get Lost at School</h3>
+        <p>
+          Учителя, звонки из школы,
+          формы, встречи и разговоры о ребёнке.
+        </p>
+        <span class="soon-badge">В разработке</span>
+      </div>
+
+      <div class="soon-card">
+        <div class="cover">🚗</div>
+        <h3>Don’t Get Lost in Rideshare</h3>
+        <p>
+          Pickup, адреса, поездки,
+          аэропорт и разговоры с пассажирами.
+        </p>
+        <span class="soon-badge">Позже в серии</span>
+      </div>
+
     </div>
   </div>
 </section>
@@ -645,33 +874,156 @@ footer{border-top:1px solid var(--line);padding:36px 0;font-size:.86rem;color:va
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">FAQ</span>
-      <h2>Questions, answered</h2>
+      <h2>Вопросы перед покупкой</h2>
     </div>
+
     <div class="faq">
-      <details><summary>Is this a physical book?</summary><p class="a">No, it is a digital PDF. You download it and open it on any device.</p></details>
-      <details><summary>Do I get instant access?</summary><p class="a">Yes. Payhip delivers the PDF immediately after purchase.</p></details>
-      <details><summary>Can I print it?</summary><p class="a">Yes, the guide is designed for both screen and paper.</p></details>
-      <details><summary>Is it good for beginners?</summary><p class="a">Yes. Every phrase has a Russian explanation and pronunciation in Russian letters, and every chapter tells you what to say next.</p></details>
-      <details><summary>Is this a full English course?</summary><p class="a">No. It is a practical conversation rescue guide: 7 chapters, 6 techniques, 70 real dialogs.</p></details>
-      <details><summary>Will there be more PDFs later?</summary><p class="a">Yes. This is the first guide in the series — situation-specific guides are coming next.</p></details>
+
+      <details>
+        <summary>Это курс английского?</summary>
+        <p class="a">
+          Нет. Это не курс грамматики и не учебник, который нужно проходить по порядку.
+          Это практичный PDF для конкретного момента: ты не понял вопрос, не понял, что от тебя хотят,
+          не успеваешь за речью, ищешь ответ в телефоне или проверяешь важную информацию.
+        </p>
+      </details>
+
+      <details>
+        <summary>Подойдёт ли мне, если мой английский совсем слабый?</summary>
+        <p class="a">
+          Да, если ты уже можешь читать простые английские слова или готов произносить их по русской подсказке.
+          Главные фразы в главах даны с переводом и подсказкой русскими буквами, как их сказать.
+          Тебе не нужно заранее знать сложную грамматику.
+        </p>
+      </details>
+
+      <details>
+        <summary>А если я знаю слова, но в реальном разговоре всё равно теряюсь?</summary>
+        <p class="a">
+          Именно для этого книга и сделана. Она помогает не только найти одну фразу,
+          но и понять, что тебе могут ответить после неё и что сказать дальше,
+          если повторить оказалось недостаточно.
+        </p>
+      </details>
+
+      <details>
+        <summary>Это просто список фраз с переводом?</summary>
+        <p class="a">
+          Нет. Внутри 7 глав по моментам, когда разговор зашёл в тупик,
+          70 коротких диалогов, варианты главных фраз, подсказки,
+          что тебе могут ответить, и переходы к следующему шагу.
+        </p>
+      </details>
+
+      <details>
+        <summary>Нужно читать всю книгу от начала до конца?</summary>
+        <p class="a">
+          Не обязательно. В начале есть быстрый навигатор по ситуации:
+          «не понял вопрос», «говорят слишком быстро», «нужно показать или написать»,
+          «нужно проверить цифру» и другие моменты. Открываешь нужную главу,
+          когда она нужна.
+        </p>
+      </details>
+
+      <details>
+        <summary>Можно ли открыть PDF прямо во время звонка или разговора?</summary>
+        <p class="a">
+          Да. Книга рассчитана не только на чтение дома.
+          Её можно заранее открыть перед звонком, встречей, визитом к врачу,
+          разговором в школе, магазине или на работе. Внутри есть короткие фразы,
+          которые легко быстро найти и прочитать с экрана.
+        </p>
+      </details>
+
+      <details>
+        <summary>Что именно есть в книге кроме диалогов?</summary>
+        <p class="a">
+          Есть фразы для переспроса, просьбы говорить медленнее,
+          просьбы показать или написать информацию, паузы для проверки телефона,
+          сверки цифр, дат, имён и адресов. Также есть блоки про алфавит,
+          цены, время, даты США, пары вроде fifteen / fifty
+          и готовые карточки для телефона.
+        </p>
+      </details>
+
+      <details>
+        <summary>Поможет ли она в магазине, у врача, в школе или на работе?</summary>
+        <p class="a">
+          Да, но это не отдельный разговорник только для одной сферы.
+          Книга даёт универсальные фразы, которые повторяются в разных местах:
+          переспросить кассира, понять инструкцию на работе, уточнить дату записи,
+          попросить врача написать название лекарства или проверить адрес.
+        </p>
+      </details>
+
+      <details>
+        <summary>А если разговор про деньги, документы, лечение или подпись?</summary>
+        <p class="a">
+          В книге есть отдельная глава про ситуации, где нельзя угадывать.
+          Она помогает уточнить цифру, дату, адрес, имя или смысл документа,
+          попросить объяснить проще, показать информацию или дать время на перевод.
+          PDF не заменяет переводчика, врача, юриста или официальную консультацию.
+        </p>
+      </details>
+
+      <details>
+        <summary>Есть ли в книге что-то, что можно просто показать с телефона?</summary>
+        <p class="a">
+          Да. В конце есть раздел Show This on Your Phone:
+          готовые экранные карточки с просьбой говорить медленнее, напечатать информацию
+          или помочь с переводом. Ещё есть аварийная страница
+          «Я завис. Что говорить?» с 7 главными фразами крупным шрифтом.
+        </p>
+      </details>
+
+      <details>
+        <summary>Можно ли распечатать PDF?</summary>
+        <p class="a">
+          Да. PDF можно хранить на своих устройствах и распечатать для личного использования:
+          например, оставить нужные страницы дома, в машине или в папке с документами.
+        </p>
+      </details>
+
+
+      <details>
+        <summary>Будут ли другие книги серии?</summary>
+        <p class="a">
+          Да. Эта книга даёт базу для любого непонятного разговора.
+          Следующие PDF серии будут глубже разбирать отдельные ситуации:
+          магазин, звонки, работа, школа, врач и другие бытовые задачи в США.
+        </p>
+      </details>
+
     </div>
   </div>
 </section>
 
 <!-- ============ FINAL CTA ============ -->
+<!-- ============ FINAL CTA ============ -->
 <section class="final">
   <div>
-    <span class="eyebrow">Ready when you are</span>
-    <h2>Stop freezing. Start talking.</h2>
-    <p class="ru">Один PDF — и в следующем разговоре ты знаешь, что сказать, что услышишь и что делать дальше.</p>
-    <a class="btn btn-primary buy-link" href="#">Buy PDF on Payhip — $12</a>
+    <span class="eyebrow">ГОТОВ, КОГДА НУЖЕН</span>
+
+    <h2>
+      Не угадывай.<br>
+      Знай, что сказать дальше.
+    </h2>
+
+    <p class="ru">
+      Один PDF для тех моментов, когда ты не понял вопрос,
+      не успел за разговором или не хочешь ошибиться в важном.
+    </p>
+
+    <a class="btn btn-primary buy-link" href="#">
+      Купить PDF за $12
+    </a>
   </div>
 </section>
 
 <footer>
   <div class="wrap foot-inner">
-    <span>© <span id="year"></span> Don't Get Lost by Oleh Blokitin. All rights reserved.</span>
-    <span>Payments &amp; delivery by Payhip · Digital PDF product</span>
+    <span>© <span id="year"></span> Don’t Get Lost by Oleh Blokitin. Все права защищены.</span>
+    <span>Цифровой PDF · Оплата и получение файла через Payhip</span>
   </div>
 </footer>
 
@@ -679,7 +1031,7 @@ footer{border-top:1px solid var(--line);padding:36px 0;font-size:.86rem;color:va
 /* =====================================================
    PAYHIP ССЫЛКА — МЕНЯЕТСЯ ТОЛЬКО ЗДЕСЬ
    ===================================================== */
-const PAYHIP_URL = "https://payhip.com/b/YOUR_PRODUCT_ID";
+const PAYHIP_URL = "https://payhip.com/b/1qXAn";
 
 document.querySelectorAll(".buy-link").forEach(a => {
   a.href = PAYHIP_URL; a.target = "_blank"; a.rel = "noopener";
