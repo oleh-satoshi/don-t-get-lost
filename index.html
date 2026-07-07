@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================
+     PAYHIP LINK — меняется В ОДНОМ МЕСТЕ:
+     внизу файла в <script> константа PAYHIP_URL.
+     Все кнопки покупки подхватят её автоматически.
+     ============================================================ -->
+
+<title>Don't Get Lost, Start Here — Essential English Phrases for Russian Speakers in America</title>
+<meta name="description" content="A conversation rescue playbook for Russian speakers in the USA: 7 chapters, 6 psychological techniques, 70 real dialogs. Say It → Hear It → Handle It. Instant PDF download.">
+<meta name="keywords" content="English phrases for Russian speakers, survival English USA, разговорный английский, английский для жизни в США, что сказать вместо Yes">
+<meta property="og:title" content="Don't Get Lost, Start Here">
+<meta property="og:description" content="Я не понял. Что сказать вместо «Yes»? Conversation rescue playbook: 7 глав, 6 приёмов, 70 живых диалогов.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230A6CFF'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial'>💬</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#FBFBFD; --bg-soft:#F5F5F7; --ink:#1D1D1F; --gray:#6E6E73;
+  --line:rgba(0,0,0,.08); --accent:#0A6CFF; --accent-2:#7B5CFF;
+  --green:#0FB77A; --orange:#E88A1A; --ora-i:#B36200;
+  --card:#FFFFFF; --glass:rgba(255,255,255,.72);
+  --r-lg:28px; --r-md:20px; --r-sm:14px;
+  --sh-soft:0 8px 30px rgba(0,0,0,.06); --sh-float:0 24px 60px rgba(29,29,31,.12);
+  --max:1120px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);
+color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3{letter-spacing:-.03em;line-height:1.08;font-weight:800}
+h1{font-size:clamp(2.6rem,6.4vw,4.4rem)}
+h2{font-size:clamp(1.9rem,4.2vw,2.9rem)}
+h3{font-size:1.25rem;letter-spacing:-.01em}
+.lead{font-size:clamp(1.05rem,2vw,1.3rem);color:var(--gray);font-weight:500}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.12em;
+text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.ru{color:var(--gray);font-size:1rem}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:16px 30px;
+border-radius:999px;font-weight:600;font-size:1rem;transition:transform .2s,box-shadow .2s;
+cursor:pointer;border:none;white-space:nowrap}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;
+box-shadow:0 10px 26px rgba(10,108,255,.32)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(10,108,255,.4)}
+.btn-ghost{background:rgba(29,29,31,.05);color:var(--ink)}
+.btn-ghost:hover{background:rgba(29,29,31,.09)}
+.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--glass);
+backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);
+border-bottom:1px solid var(--line)}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:0 24px;height:60px;
+display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;font-size:1.05rem;display:flex;align-items:center;gap:8px}
+.brand .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2))}
+.nav-links{display:flex;gap:26px;font-size:.92rem;color:var(--gray);font-weight:500}
+.nav-links a:hover{color:var(--ink)}
+.nav-buy{padding:9px 20px;font-size:.9rem}
+@media(max-width:760px){.nav-links{display:none}}
+
+.hero{padding:150px 0 90px;position:relative}
+.hero::before{content:"";position:absolute;inset:-200px -200px auto -200px;height:640px;
+background:radial-gradient(560px 380px at 18% 20%,rgba(10,108,255,.10),transparent 70%),
+radial-gradient(520px 360px at 82% 12%,rgba(123,92,255,.10),transparent 70%);
+pointer-events:none;z-index:-1}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero-copy .ru{margin:22px 0 32px;max-width:48ch}
+.hero-sub{margin-top:20px;max-width:46ch}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-note{margin-top:18px;font-size:.86rem;color:var(--gray)}
+.hero-stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:8px 16px;font-size:.85rem;font-weight:600;box-shadow:var(--sh-soft)}
+.stat b{color:var(--accent)}
+@media(max-width:900px){.hero{padding:120px 0 60px}.hero-grid{grid-template-columns:1fr;gap:48px}}
+
+.device-stage{position:relative;display:flex;justify-content:center;padding:10px 0}
+.iphone{width:300px;background:#0f0f12;border-radius:48px;padding:12px;
+box-shadow:var(--sh-float),inset 0 0 0 2px rgba(255,255,255,.06);transform:rotate(-2.5deg);z-index:2}
+.iphone-screen{background:linear-gradient(180deg,#fff,#f6f7fb);border-radius:38px;overflow:hidden;
+height:560px;display:flex;flex-direction:column}
+.notch{width:110px;height:26px;background:#0f0f12;border-radius:0 0 16px 16px;margin:0 auto;flex:none}
+.chat-head{text-align:center;padding:8px 0 12px;border-bottom:1px solid var(--line);
+font-size:.72rem;color:var(--gray);flex:none}
+.chat-head b{display:block;color:var(--ink);font-size:.85rem}
+.chat{flex:1;padding:16px 14px;display:flex;flex-direction:column;gap:10px;overflow:hidden}
+.bubble{max-width:84%;padding:10px 14px;border-radius:20px;font-size:.85rem;line-height:1.4;
+opacity:0;transform:translateY(12px);animation:pop .5s ease forwards}
+.bubble .tag{display:block;font-size:.6rem;font-weight:700;letter-spacing:.1em;
+text-transform:uppercase;margin-bottom:3px;opacity:.65}
+.b-you{align-self:flex-end;background:linear-gradient(135deg,var(--accent),#3E8BFF);color:#fff;border-bottom-right-radius:6px}
+.b-them{align-self:flex-start;background:#E9E9EF;color:var(--ink);border-bottom-left-radius:6px}
+.b-sos{align-self:flex-end;background:#FFF3E5;color:var(--ora-i);border:1px solid #ffd9ad;border-bottom-right-radius:6px}
+.bubble:nth-child(1){animation-delay:.4s}.bubble:nth-child(2){animation-delay:1.1s}
+.bubble:nth-child(3){animation-delay:1.8s}.bubble:nth-child(4){animation-delay:2.5s}
+.bubble:nth-child(5){animation-delay:3.2s}
+@keyframes pop{to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.bubble{animation:none;opacity:1;transform:none}
+*{scroll-behavior:auto!important;transition:none!important}}
+.ipad-ghost{position:absolute;right:-8%;top:8%;width:340px;height:440px;border-radius:32px;
+background:var(--glass);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.7);
+box-shadow:var(--sh-soft);transform:rotate(4deg);z-index:1;display:flex;flex-direction:column;padding:26px;gap:14px}
+.ipad-ghost .ph-line{height:12px;border-radius:6px;background:rgba(29,29,31,.08)}
+.ipad-ghost .w60{width:60%}.ipad-ghost .w80{width:80%}
+.ipad-ghost .ph-block{flex:1;border-radius:18px;background:linear-gradient(160deg,rgba(10,108,255,.12),rgba(123,92,255,.12));
+display:flex;align-items:center;justify-content:center;font-size:2.4rem}
+.macbook-ghost{position:absolute;left:-14%;bottom:-4%;width:300px;border-radius:18px;z-index:1;
+background:var(--glass);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.7);
+box-shadow:var(--sh-soft);transform:rotate(-3deg);padding:18px}
+.macbook-ghost .bar{display:flex;gap:6px;margin-bottom:12px}
+.macbook-ghost .bar i{width:9px;height:9px;border-radius:50%;background:rgba(29,29,31,.14)}
+.macbook-ghost .pdf-tag{display:inline-block;font-size:.65rem;font-weight:700;letter-spacing:.08em;
+background:var(--ink);color:#fff;border-radius:6px;padding:3px 8px;margin-bottom:10px}
+.macbook-ghost .ph-line{height:9px;border-radius:5px;background:rgba(29,29,31,.08);margin-bottom:8px}
+@media(max-width:1100px){.ipad-ghost{right:-2%}}
+@media(max-width:640px){.ipad-ghost,.macbook-ghost{display:none}.iphone{width:270px}.iphone-screen{height:520px}}
+
+section{padding:96px 0}
+section.alt{background:var(--bg-soft)}
+.sec-head{max-width:740px;margin:0 auto 56px;text-align:center}
+.sec-head p{margin-top:18px}
+@media(max-width:760px){section{padding:72px 0}}
+
+.problem-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;max-width:940px;margin:0 auto}
+.problem-item{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);
+padding:24px 26px;display:flex;gap:16px;align-items:flex-start;box-shadow:var(--sh-soft)}
+.problem-item .ico{flex:none;width:42px;height:42px;border-radius:12px;display:flex;align-items:center;
+justify-content:center;background:linear-gradient(135deg,rgba(10,108,255,.1),rgba(123,92,255,.1));font-size:1.2rem}
+.problem-item p{font-weight:500}
+.problem-item em{font-style:normal;color:var(--accent);font-weight:600}
+
+.chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:880px;margin:0 auto}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:13px 22px;
+font-weight:600;font-size:.96rem;display:flex;gap:9px;align-items:center;box-shadow:var(--sh-soft)}
+
+.method-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:56px}
+.method-card{background:var(--card);border-radius:var(--r-lg);padding:34px 30px;border:1px solid var(--line);
+box-shadow:var(--sh-soft);transition:transform .25s,box-shadow .25s}
+.method-card:hover{transform:translateY(-4px);box-shadow:var(--sh-float)}
+.method-card .step-ico{width:54px;height:54px;border-radius:16px;display:flex;align-items:center;
+justify-content:center;font-size:1.5rem;margin-bottom:20px;color:#fff}
+.method-card:nth-child(1) .step-ico{background:linear-gradient(135deg,#0A6CFF,#3E8BFF)}
+.method-card:nth-child(2) .step-ico{background:linear-gradient(135deg,#7B5CFF,#A78BFF)}
+.method-card:nth-child(3) .step-ico{background:linear-gradient(135deg,#0FB77A,#34C759)}
+.method-card h3{margin-bottom:10px}
+.method-card p{color:var(--gray);font-size:.97rem}
+@media(max-width:860px){.method-cards{grid-template-columns:1fr}}
+.example-glass{max-width:640px;margin:0 auto;background:var(--glass);backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.8);border-radius:var(--r-lg);box-shadow:var(--sh-float);padding:36px}
+.example-glass .ex-label{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+color:var(--gray);margin-bottom:20px;text-align:center}
+.ex-row{margin-bottom:18px}.ex-row:last-child{margin-bottom:0}
+.ex-tag{font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;display:block;margin-bottom:6px}
+.ex-say .ex-tag{color:var(--accent)}.ex-hear .ex-tag{color:var(--accent-2)}
+.ex-handle .ex-tag{color:var(--green)}.ex-sos .ex-tag{color:var(--ora-i)}
+.ex-phrase{font-size:1.1rem;font-weight:600;background:var(--card);border:1px solid var(--line);
+border-radius:16px;padding:14px 18px}
+.ex-sos .ex-phrase{background:#FFF7EE;border-color:#FFE1BF}
+
+.toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;max-width:940px;margin:0 auto}
+.toc-item{background:var(--card);border:1px solid var(--line);border-radius:var(--r-sm);
+padding:20px 22px;display:flex;align-items:center;gap:16px;font-weight:600;box-shadow:var(--sh-soft)}
+.toc-num{flex:none;width:34px;height:34px;border-radius:10px;background:var(--bg-soft);
+display:flex;align-items:center;justify-content:center;font-size:.82rem;font-weight:700;color:var(--accent)}
+.toc-final{max-width:940px;margin:20px auto 0;background:linear-gradient(135deg,#F2F8FF,#F6F3FF);
+border:1px solid var(--line);border-radius:var(--r-md);padding:22px 26px;font-size:.95rem}
+.toc-final b{color:var(--accent)}
+
+.preview-scroll{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.pv-card{aspect-ratio:3/4;border-radius:var(--r-md);border:1px solid var(--line);background:var(--card);
+box-shadow:var(--sh-soft);overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.pv-card:hover{transform:translateY(-5px) scale(1.01);box-shadow:var(--sh-float)}
+.pv-art{flex:1;display:flex;align-items:center;justify-content:center;font-size:2.6rem}
+.pv-1 .pv-art{background:linear-gradient(160deg,#EAF2FF,#F3EFFF)}
+.pv-2 .pv-art{background:linear-gradient(160deg,#F3EFFF,#EAFBF1)}
+.pv-3 .pv-art{background:linear-gradient(160deg,#EAFBF1,#FFF4E8)}
+.pv-4 .pv-art{background:linear-gradient(160deg,#FFF4E8,#EAF2FF)}
+.pv-5 .pv-art{background:linear-gradient(160deg,#EAF2FF,#EAFBF1)}
+.pv-label{padding:14px 16px;font-size:.86rem;font-weight:600;border-top:1px solid var(--line)}
+.pv-label small{display:block;color:var(--gray);font-weight:500;margin-top:2px}
+/* Реальные скриншоты: замени содержимое .pv-art на
+   <img src="preview-1.jpg" alt="..." style="width:100%;height:100%;object-fit:cover"> */
+
+.who-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:960px;margin:0 auto}
+.who-card{border-radius:var(--r-lg);padding:36px;border:1px solid var(--line);box-shadow:var(--sh-soft)}
+.who-yes{background:linear-gradient(170deg,#F2F8FF,#fff)}
+.who-no{background:linear-gradient(170deg,#FAFAFA,#fff)}
+.who-card h3{margin-bottom:22px}
+.who-card ul{list-style:none;display:flex;flex-direction:column;gap:14px}
+.who-card li{display:flex;gap:12px;align-items:flex-start;font-size:.98rem}
+.who-card li b{flex:none;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;
+justify-content:center;font-size:.7rem;margin-top:2px;color:#fff}
+.who-yes li b{background:var(--green)}
+.who-no li b{background:#C7C7CC}
+@media(max-width:820px){.who-grid{grid-template-columns:1fr}}
+
+.product-card{max-width:880px;margin:0 auto;background:var(--card);border-radius:36px;
+box-shadow:var(--sh-float);border:1px solid var(--line);overflow:hidden;display:grid;grid-template-columns:1fr 1fr}
+.product-left{padding:48px;display:flex;flex-direction:column}
+.product-left .price{font-size:3.2rem;font-weight:800;letter-spacing:-.03em;margin:14px 0 4px}
+.product-left .price small{font-size:1rem;color:var(--gray);font-weight:500;letter-spacing:0}
+.includes{list-style:none;margin:26px 0 34px;display:flex;flex-direction:column;gap:12px}
+.includes li{display:flex;gap:11px;align-items:flex-start;font-size:.95rem}
+.includes li::before{content:"✓";color:var(--green);font-weight:700;flex:none}
+.product-left .btn{align-self:flex-start}
+.guarantee{margin-top:16px;font-size:.83rem;color:var(--gray)}
+.product-right{background:linear-gradient(160deg,#0A6CFF,#7B5CFF);color:#fff;display:flex;
+align-items:center;justify-content:center;padding:48px;position:relative;overflow:hidden}
+.product-right::before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;
+background:rgba(255,255,255,.14);top:-120px;right:-120px}
+.mini-cover{width:210px;aspect-ratio:3/4;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);
+border-radius:18px;backdrop-filter:blur(8px);box-shadow:0 24px 50px rgba(0,0,0,.25);
+padding:24px;display:flex;flex-direction:column;justify-content:space-between;z-index:1}
+.mini-cover .pdf-chip{align-self:flex-start;background:#fff;color:var(--accent);font-size:.65rem;
+font-weight:800;letter-spacing:.1em;border-radius:6px;padding:4px 9px}
+.mini-cover h4{font-size:1.15rem;line-height:1.2;font-weight:800}
+.mini-cover p{font-size:.72rem;opacity:.85;margin-top:8px}
+@media(max-width:820px){.product-card{grid-template-columns:1fr}.product-right{padding:40px}}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1000px;margin:0 auto}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);
+padding:28px 24px;box-shadow:var(--sh-soft);text-align:center}
+.step .n{width:44px;height:44px;border-radius:50%;margin:0 auto 16px;color:#fff;font-weight:700;
+display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent),var(--accent-2))}
+.step h3{font-size:1.02rem;margin-bottom:6px}
+.step p{font-size:.88rem;color:var(--gray)}
+@media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+
+.soon-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.soon-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);
+padding:28px;box-shadow:var(--sh-soft);display:flex;flex-direction:column;gap:12px;transition:transform .25s}
+.soon-card:hover{transform:translateY(-4px)}
+.soon-card .cover{height:120px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:2.2rem}
+.soon-card:nth-child(1) .cover{background:linear-gradient(150deg,#EAF2FF,#DCEAFF)}
+.soon-card:nth-child(2) .cover{background:linear-gradient(150deg,#EAFBF1,#D8F5E4)}
+.soon-card:nth-child(3) .cover{background:linear-gradient(150deg,#FFF0F0,#FFE3E3)}
+.soon-card:nth-child(4) .cover{background:linear-gradient(150deg,#F3EFFF,#E7DEFF)}
+.soon-card:nth-child(5) .cover{background:linear-gradient(150deg,#FFF4E8,#FFE8CF)}
+.soon-card:nth-child(6) .cover{background:linear-gradient(150deg,#EAF8FF,#D6F0FF)}
+.soon-card h3{font-size:1.05rem}
+.soon-card p{font-size:.87rem;color:var(--gray);flex:1}
+.soon-badge{align-self:flex-start;font-size:.72rem;font-weight:700;letter-spacing:.08em;
+text-transform:uppercase;background:var(--bg-soft);color:var(--gray);border-radius:999px;padding:7px 14px}
+
+.faq{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:var(--r-sm);
+box-shadow:var(--sh-soft);overflow:hidden}
+.faq summary{padding:20px 24px;font-weight:600;cursor:pointer;list-style:none;
+display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.4rem;font-weight:400;color:var(--gray);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 24px 20px;color:var(--gray);font-size:.95rem}
+
+.final{text-align:center;padding:110px 24px;
+background:radial-gradient(600px 320px at 50% 0%,rgba(10,108,255,.08),transparent 70%),var(--bg-soft)}
+.final h2{margin-bottom:16px}
+.final .ru{max-width:54ch;margin:0 auto 34px}
+
+footer{border-top:1px solid var(--line);padding:36px 0;font-size:.86rem;color:var(--gray)}
+.foot-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="nav-inner">
+    <a class="brand" href="#top"><span class="dot"></span>Don't Get Lost</a>
+    <div class="nav-links">
+      <a href="#method">Method</a>
+      <a href="#inside">What's inside</a>
+      <a href="#preview">Preview</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a class="btn btn-primary nav-buy buy-link" href="#">Buy PDF — $12</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">PDF Guide · Book 1 in the series</span>
+      <h1>Don't Get Lost,<br>Start Here</h1>
+      <p class="lead hero-sub">Essential English phrases for Russian speakers who want to feel more confident in everyday conversations in America.</p>
+      <p class="ru">Я не понял. Что сказать вместо «Yes»? Не учи английский «когда-нибудь» — открой PDF и знай, что сказать, когда тебя спросили, ты не понял или тебе нужна помощь.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary buy-link" href="#">Buy PDF on Payhip</a>
+        <a class="btn btn-ghost" href="#preview">Preview Inside</a>
+      </div>
+      <div class="hero-stats">
+        <span class="stat"><b>7</b> глав по ситуациям</span>
+        <span class="stat"><b>70</b> живых диалогов</span>
+        <span class="stat"><b>6</b> приёмов против ступора</span>
+      </div>
+      <p class="hero-note">🛡 Instant download · Secure checkout by Payhip</p>
+    </div>
+
+    <div class="device-stage" aria-hidden="true">
+      <div class="ipad-ghost">
+        <span class="ph-line w60"></span><span class="ph-line w80"></span>
+        <div class="ph-block">📖</div>
+        <span class="ph-line w80"></span><span class="ph-line w60"></span>
+      </div>
+      <div class="iphone">
+        <div class="iphone-screen">
+          <div class="notch"></div>
+          <div class="chat-head"><b>Диалог 1 из 70</b>кофейня · сегодня</div>
+          <div class="chat">
+            <div class="bubble b-them"><span class="tag">Barista</span>For here or to go?</div>
+            <div class="bubble b-you"><span class="tag">Say it</span>Could you repeat that, please?</div>
+            <div class="bubble b-them"><span class="tag">You may hear</span>For here or to go?</div>
+            <div class="bubble b-you"><span class="tag">Handle it</span>To go, please!</div>
+            <div class="bubble b-sos"><span class="tag">Emergency</span>I'm still learning English. Could you help me? 🙌</div>
+          </div>
+        </div>
+      </div>
+      <div class="macbook-ghost">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <span class="pdf-tag">PDF</span>
+        <span class="ph-line" style="width:85%"></span>
+        <span class="ph-line" style="width:65%"></span>
+        <span class="ph-line" style="width:75%"></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PROBLEM ============ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The real problem</span>
+      <h2>You don't need perfect English.<br>You need a way to not freeze.</h2>
+      <p class="ru">Тебе не нужен идеальный английский. Тебе нужен способ не растеряться.</p>
+    </div>
+    <div class="problem-list">
+      <div class="problem-item"><div class="ico">😶</div><p>Someone asks you something — and you don't understand.</p></div>
+      <div class="problem-item"><div class="ico">🙋</div><p>You need help — but don't know how to explain.</p></div>
+      <div class="problem-item"><div class="ico">❓</div><p>You hear <em>"You're all set"</em> or <em>"You're good"</em> — and have no idea what it means.</p></div>
+      <div class="problem-item"><div class="ico">🤝</div><p>You want to sound polite, not rude or lost.</p></div>
+      <div class="problem-item"><div class="ico">⚡</div><p>You need phrases you can use <em>today</em>.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HELPS YOU DO ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What this guide helps you do</span>
+      <h2>Small phrases. Big difference.</h2>
+    </div>
+    <div class="chips">
+      <div class="chip">🔁 Ask people to repeat</div>
+      <div class="chip">🐢 Ask people to speak slowly</div>
+      <div class="chip">🎯 Понять, что от тебя хотят</div>
+      <div class="chip">✍️ Перевести разговор в текст и экран</div>
+      <div class="chip">⏸️ Buy time when you panic</div>
+      <div class="chip">🔢 Проверить цифры, даты и имена</div>
+      <div class="chip">📱 Show ready-made phrases on your phone</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ METHOD ============ -->
+<section class="alt" id="method">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Not a phrasebook — a rescue system</span>
+      <h2>Say It → Hear It → Handle It</h2>
+      <p class="lead">Most phrasebooks stop at "what to say". This guide prepares you for what happens <b>next</b>.</p>
+    </div>
+    <div class="method-cards">
+      <div class="method-card">
+        <div class="step-ico">🗣️</div>
+        <h3>Say It</h3>
+        <p>Главная фраза каждой главы + короткая аварийная версия, с произношением русскими буквами.</p>
+      </div>
+      <div class="method-card">
+        <div class="step-ico">👂</div>
+        <h3>Hear It</h3>
+        <p>Что американцы реально ответят — блоки «Что тебе могут ответить» после каждых диалогов.</p>
+      </div>
+      <div class="method-card">
+        <div class="step-ico">🧭</div>
+        <h3>Handle It</h3>
+        <p>Что сказать дальше + 6 психологических приёмов, чтобы не зависнуть и не сказать «Yes» наугад.</p>
+      </div>
+    </div>
+    <div class="example-glass">
+      <p class="ex-label">Example from the guide · Глава 1</p>
+      <div class="ex-row ex-say"><span class="ex-tag">Say it</span>
+        <p class="ex-phrase">"Could you repeat that, please?" <span style="color:var(--gray);font-weight:400">[куд ю рипи́т зэт, плиз]</span></p></div>
+      <div class="ex-row ex-hear"><span class="ex-tag">You may hear</span>
+        <p class="ex-phrase">"Sure." · "No problem." · "Of course."</p></div>
+      <div class="ex-row ex-handle"><span class="ex-tag">Handle it</span>
+        <p class="ex-phrase">"What do you need from me?"</p></div>
+      <div class="ex-row ex-sos"><span class="ex-tag">Emergency</span>
+        <p class="ex-phrase">"I'm still learning English. Could you help me understand?"</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT'S INSIDE ============ -->
+<section id="inside">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">What's inside</span>
+      <h2>Seven chapters. One for each moment you freeze.</h2>
+      <p class="ru">Ищи не по темам, а по состоянию: каждая глава — это момент, в котором ты застрял. Внутри — фразы, приём и 10 живых диалогов.</p>
+    </div>
+    <div class="toc">
+      <div class="toc-item"><span class="toc-num">01</span>Я не понял. Что сказать вместо «Yes»?</div>
+      <div class="toc-item"><span class="toc-num">02</span>Я услышал слова, но не понял, что от меня хотят</div>
+      <div class="toc-item"><span class="toc-num">03</span>Они говорят слишком быстро</div>
+      <div class="toc-item"><span class="toc-num">04</span>Покажи, напиши, набери</div>
+      <div class="toc-item"><span class="toc-num">05</span>Дай мне секунду. Я проверю</div>
+      <div class="toc-item"><span class="toc-num">06</span>Проверь цифру, дату, имя или адрес</div>
+      <div class="toc-item"><span class="toc-num">07</span>Я всё ещё не понимаю. Что делать дальше?</div>
+      <div class="toc-item"><span class="toc-num">★</span>Алфавит «A as in Apple» + цифры, цены и даты США</div>
+      <div class="toc-item"><span class="toc-num">★</span>Show This on Your Phone + 20 фраз-спасателей</div>
+    </div>
+    <div class="toc-final">В финале — <b>«Мой план, если я завис»</b> и аварийная страница <b>«Я завис. Что говорить?»</b>: 7 фраз крупным шрифтом, чтобы открыть на телефоне за две секунды.</div>
+  </div>
+</section>
+
+<!-- ============ PREVIEW ============ -->
+<section class="alt" id="preview">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Preview inside</span>
+      <h2>Take a look before you buy</h2>
+      <p class="ru">Замени эти карточки реальными скриншотами страниц PDF.</p>
+    </div>
+    <div class="preview-scroll">
+      <div class="pv-card pv-1"><div class="pv-art">📄</div><div class="pv-label">Страница главы<small>фраза · варианты · приём</small></div></div>
+      <div class="pv-card pv-2"><div class="pv-art">💬</div><div class="pv-label">Живые диалоги<small>10 в каждой главе</small></div></div>
+      <div class="pv-card pv-3"><div class="pv-art">🔤</div><div class="pv-label">A as in Apple<small>продиктуй своё имя</small></div></div>
+      <div class="pv-card pv-4"><div class="pv-art">📱</div><div class="pv-label">Show This on Your Phone<small>карточки для экрана</small></div></div>
+      <div class="pv-card pv-5"><div class="pv-art">🆘</div><div class="pv-label">Аварийная страница<small>«Я завис. Что говорить?»</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOR WHO ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Honest fit check</span>
+      <h2>Is this guide for you?</h2>
+    </div>
+    <div class="who-grid">
+      <div class="who-card who-yes">
+        <h3>✅ This is for you if…</h3>
+        <ul>
+          <li><b>✓</b>You live in the USA and still feel nervous speaking English.</li>
+          <li><b>✓</b>You understand some English but freeze in real conversations.</li>
+          <li><b>✓</b>You want practical phrases, not grammar theory.</li>
+          <li><b>✓</b>You want something you can open on your phone.</li>
+          <li><b>✓</b>You speak Russian or Ukrainian and need English for daily life.</li>
+        </ul>
+      </div>
+      <div class="who-card who-no">
+        <h3>🚫 This is not for you if…</h3>
+        <ul>
+          <li><b>✕</b>You already speak fluent English.</li>
+          <li><b>✕</b>You want advanced academic English.</li>
+          <li><b>✕</b>You want a full grammar course.</li>
+          <li><b>✕</b>You are looking for a traditional textbook.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCT ============ -->
+<section class="alt" id="buy">
+  <div class="wrap">
+    <div class="product-card">
+      <div class="product-left">
+        <span class="eyebrow">Digital PDF Guide</span>
+        <h3 style="font-size:1.6rem">Don't Get Lost, Start Here</h3>
+        <p class="price">$12 <small>one-time · instant download</small></p>
+        <ul class="includes">
+          <li>Instant PDF download through Payhip</li>
+          <li>7 глав по ситуациям + 70 живых диалогов с переводом</li>
+          <li>6 психологических приёмов против ступора</li>
+          <li>Алфавит «A as in Apple», цифры, цены и даты США</li>
+          <li>Произношение русскими буквами у главных фраз</li>
+          <li>Works on phone, tablet, computer · Printable</li>
+        </ul>
+        <a class="btn btn-primary buy-link" href="#">Buy PDF on Payhip</a>
+        <p class="guarantee">Payment and delivery are handled securely by Payhip.</p>
+      </div>
+      <div class="product-right">
+        <div class="mini-cover">
+          <span class="pdf-chip">PDF · BOOK 1</span>
+          <div>
+            <h4>Don't Get Lost, Start Here</h4>
+            <p>Я не понял. Что сказать вместо «Yes»?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">How it works</span>
+      <h2>From click to reading in one minute</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Click Buy PDF</h3><p>The button takes you to Payhip.</p></div>
+      <div class="step"><div class="n">2</div><h3>Pay securely</h3><p>Payhip handles the checkout safely.</p></div>
+      <div class="step"><div class="n">3</div><h3>Get instant access</h3><p>The PDF is available right after purchase.</p></div>
+      <div class="step"><div class="n">4</div><h3>Open or print</h3><p>Read it on your phone or print it.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMING NEXT ============ -->
+<section class="alt" id="soon">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Coming next</span>
+      <h2>More practical PDF guides are coming soon</h2>
+      <p class="ru">Это первая книга серии. Следующие гайды — для конкретных жизненных ситуаций.</p>
+    </div>
+    <div class="soon-grid">
+      <div class="soon-card"><div class="cover">🚗</div><h3>English for Uber &amp; Lyft</h3><p>Rides, addresses, small talk with drivers.</p><span class="soon-badge">Coming soon</span></div>
+      <div class="soon-card"><div class="cover">🛒</div><h3>English at the Grocery Store</h3><p>Checkout, questions, finding what you need.</p><span class="soon-badge">Coming soon</span></div>
+      <div class="soon-card"><div class="cover">💊</div><h3>English at the Pharmacy &amp; Doctor</h3><p>Symptoms, prescriptions, appointments.</p><span class="soon-badge">Coming soon</span></div>
+      <div class="soon-card"><div class="cover">💼</div><h3>English for Work</h3><p>Shifts, coworkers, everyday work phrases.</p><span class="soon-badge">Coming soon</span></div>
+      <div class="soon-card"><div class="cover">🚨</div><h3>Emergency English</h3><p>911, urgent help, critical phrases.</p><span class="soon-badge">Coming soon</span></div>
+      <div class="soon-card"><div class="cover">🎒</div><h3>English for School &amp; Kids</h3><p>Teachers, school forms, parent talk.</p><span class="soon-badge">Coming soon</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions, answered</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Is this a physical book?</summary><p class="a">No, it is a digital PDF. You download it and open it on any device.</p></details>
+      <details><summary>Do I get instant access?</summary><p class="a">Yes. Payhip delivers the PDF immediately after purchase.</p></details>
+      <details><summary>Can I print it?</summary><p class="a">Yes, the guide is designed for both screen and paper.</p></details>
+      <details><summary>Is it good for beginners?</summary><p class="a">Yes. Every phrase has a Russian explanation and pronunciation in Russian letters, and every chapter tells you what to say next.</p></details>
+      <details><summary>Is this a full English course?</summary><p class="a">No. It is a practical conversation rescue guide: 7 chapters, 6 techniques, 70 real dialogs.</p></details>
+      <details><summary>Will there be more PDFs later?</summary><p class="a">Yes. This is the first guide in the series — situation-specific guides are coming next.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final">
+  <div>
+    <span class="eyebrow">Ready when you are</span>
+    <h2>Stop freezing. Start talking.</h2>
+    <p class="ru">Один PDF — и в следующем разговоре ты знаешь, что сказать, что услышишь и что делать дальше.</p>
+    <a class="btn btn-primary buy-link" href="#">Buy PDF on Payhip — $12</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span>© <span id="year"></span> Don't Get Lost by Oleh Blokitin. All rights reserved.</span>
+    <span>Payments &amp; delivery by Payhip · Digital PDF product</span>
+  </div>
+</footer>
+
+<script>
+/* =====================================================
+   PAYHIP ССЫЛКА — МЕНЯЕТСЯ ТОЛЬКО ЗДЕСЬ
+   ===================================================== */
+const PAYHIP_URL = "https://payhip.com/b/YOUR_PRODUCT_ID";
+
+document.querySelectorAll(".buy-link").forEach(a => {
+  a.href = PAYHIP_URL; a.target = "_blank"; a.rel = "noopener";
+});
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
